@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
+body{@apply font-kumbh;}
+.text24{@apply text-18 md:text-20 lg:text-22 2xl:text-24;}
+.text28{@apply text-20 md:text-22 lg:text-24 2xl:text-28;}
+.warrper{@apply w-full max-w-[1480px] px-5 mx-auto ; }
+.anim{@apply transition-all duration-300;}
+.label,label{@apply block mb-1 text-b2 font-bold text-14;}
+.input,input{@apply py-2.5 px-4 outline-none text-b1 w-full block text-16 font-normal border border-b3 bg-white rounded-lg lg:rounded-xl 2xl:rounded-2xl;}
+.button,button{@apply py-2.5 px-7 bg-primary border border-primary text-white text-16 font-extrabold  rounded-lg lg:rounded-xl 2xl:rounded-2xl hover:bg-transparent hover:text-primary anim;}
 @tailwind utilities;
