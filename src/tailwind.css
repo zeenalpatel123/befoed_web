@@ -2,11 +2,30 @@
 @tailwind base;
 @tailwind components;
 body{@apply font-kumbh;}
-.text24{@apply text-18 md:text-20 lg:text-22 2xl:text-24;}
+.text24{@apply text-18 lg:text-20 xl:text-22 2xl:text-24;}
 .text28{@apply text-20 md:text-22 lg:text-24 2xl:text-28;}
 .warrper{@apply w-full max-w-[1480px] px-5 mx-auto ; }
 .anim{@apply transition-all duration-300;}
 .label,label{@apply block mb-1 text-b2 font-bold text-14;}
-.input,input{@apply py-2.5 px-4 outline-none text-b1 w-full block text-16 font-normal border border-b3 bg-white rounded-lg lg:rounded-xl 2xl:rounded-2xl;}
-.button,button{@apply py-2.5 px-7 bg-primary border border-primary text-white text-16 font-extrabold  rounded-lg lg:rounded-xl 2xl:rounded-2xl hover:bg-transparent hover:text-primary anim;}
+.input,input{@apply py-2 xl:py-2.5 px-3 xl:px-4 outline-none text-b2 w-full block text-14 xl:text-16 border border-b3 bg-white rounded-md lg:rounded-lg 2xl:rounded-xl;}
+.button,button{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-primary border border-primary text-white text-14 xl:text-16 font-extrabold  rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-transparent hover:text-primary anim;}
+
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #eee;
+}
 @tailwind utilities;
