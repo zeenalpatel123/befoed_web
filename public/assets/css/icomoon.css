@@ -1,199 +1,201 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?gq5i3');
-    src:  url('../fonts/icomoon.eot?gq5i3#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?gq5i3') format('truetype'),
-      url('../fonts/icomoon.woff?gq5i3') format('woff'),
-      url('../fonts/icomoon.svg?gq5i3#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-add:before {
-    content: "\e908";
-  }
-  .icon-airplane-square:before {
-    content: "\e909";
-  }
-  .icon-aligncenter:before {
-    content: "\e90a";
-  }
-  .icon-alignjustify:before {
-    content: "\e90b";
-  }
-  .icon-alignleft:before {
-    content: "\e90c";
-  }
-  .icon-alignright:before {
-    content: "\e90d";
-  }
-  .icon-apprentice:before {
-    content: "\e90e";
-  }
-  .icon-arrow-left:before {
-    content: "\e90f";
-  }
-  .icon-blockquote:before {
-    content: "\e910";
-  }
-  .icon-bold:before {
-    content: "\e911";
-  }
-  .icon-call:before {
-    content: "\e912";
-  }
-  .icon-clock:before {
-    content: "\e913";
-  }
-  .icon-codeview:before {
-    content: "\e914";
-  }
-  .icon-discountshape:before {
-    content: "\e915";
-  }
-  .icon-education:before {
-    content: "\e916";
-  }
-  .icon-elearning:before {
-    content: "\e917";
-  }
-  .icon-export:before {
-    content: "\e918";
-  }
-  .icon-file:before {
-    content: "\e919";
-  }
-  .icon-frame:before {
-    content: "\e91a";
-  }
-  .icon-free-trade:before {
-    content: "\e91b";
-  }
-  .icon-global:before {
-    content: "\e91c";
-  }
-  .icon-image:before {
-    content: "\e91d";
-  }
-  .icon-imageManager:before {
-    content: "\e91e";
-  }
-  .icon-import:before {
-    content: "\e91f";
-  }
-  .icon-info:before {
-    content: "\e920";
-  }
-  .icon-italic:before {
-    content: "\e921";
-  }
-  .icon-learning:before {
-    content: "\e922";
-  }
-  .icon-location:before {
-    content: "\e923";
-  }
-  .icon-location_set:before {
-    content: "\e924";
-  }
-  .icon-mail:before {
-    content: "\e925";
-  }
-  .icon-marketing-online:before {
-    content: "\e926";
-  }
-  .icon-menu1:before {
-    content: "\e927";
-  }
-  .icon-menu-bar__button--base:before {
-    content: "\e928";
-  }
-  .icon-money-2:before {
-    content: "\e929";
-  }
-  .icon-online-learning:before {
-    content: "\e92a";
-  }
-  .icon-orderedList:before {
-    content: "\e92b";
-  }
-  .icon-paperclip-2:before {
-    content: "\e92c";
-  }
-  .icon-password:before {
-    content: "\e92d";
-  }
-  .icon-reload:before {
-    content: "\e92e";
-  }
-  .icon-right:before {
-    content: "\e92f";
-  }
-  .icon-setting:before {
-    content: "\e930";
-  }
-  .icon-strikethrough:before {
-    content: "\e931";
-  }
-  .icon-student:before {
-    content: "\e932";
-  }
-  .icon-textcolor:before {
-    content: "\e933";
-  }
-  .icon-tick-circle:before {
-    content: "\e934";
-  }
-  .icon-underline:before {
-    content: "\e935";
-  }
-  .icon-university:before {
-    content: "\e936";
-  }
-  .icon-unlink:before {
-    content: "\e937";
-  }
-  .icon-unorderedList:before {
-    content: "\e938";
-  }
-  .icon-trash:before {
-    content: "\e901";
-  }
-  .icon-edit:before {
-    content: "\e902";
-  }
-  .icon-plus:before {
-    content: "\e903";
-  }
-  .icon-calendar:before {
-    content: "\e904";
-  }
-  .icon-search-normal:before {
-    content: "\e905";
-  }
-  .icon-arrow-down:before {
-    content: "\e906";
-  }
-  .icon-notification:before {
-    content: "\e907";
-  }
-  .icon-menu:before {
-    content: "\e900";
-  }
-  
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bq5ujy');
+  src:  url('../fonts/icomoon.eot?bq5ujy#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bq5ujy') format('truetype'),
+    url('../fonts/icomoon.woff?bq5ujy') format('woff'),
+    url('../fonts/icomoon.svg?bq5ujy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-profile:before {
+  content: "\e939";
+}
+.icon-close:before {
+  content: "\e908";
+}
+.icon-airplane:before {
+  content: "\e909";
+}
+.icon-aligncenter:before {
+  content: "\e90a";
+}
+.icon-alignjustify:before {
+  content: "\e90b";
+}
+.icon-alignleft:before {
+  content: "\e90c";
+}
+.icon-alignright:before {
+  content: "\e90d";
+}
+.icon-apprentice:before {
+  content: "\e90e";
+}
+.icon-arrow-left:before {
+  content: "\e90f";
+}
+.icon-blockquote:before {
+  content: "\e910";
+}
+.icon-bold:before {
+  content: "\e911";
+}
+.icon-call:before {
+  content: "\e912";
+}
+.icon-clock:before {
+  content: "\e913";
+}
+.icon-codeview:before {
+  content: "\e914";
+}
+.icon-discountshape:before {
+  content: "\e915";
+}
+.icon-education:before {
+  content: "\e916";
+}
+.icon-elearning:before {
+  content: "\e917";
+}
+.icon-export:before {
+  content: "\e918";
+}
+.icon-file:before {
+  content: "\e919";
+}
+.icon-frame:before {
+  content: "\e91a";
+}
+.icon-free-trade:before {
+  content: "\e91b";
+}
+.icon-global:before {
+  content: "\e91c";
+}
+.icon-image:before {
+  content: "\e91d";
+}
+.icon-image_manager:before {
+  content: "\e91e";
+}
+.icon-import:before {
+  content: "\e91f";
+}
+.icon-info:before {
+  content: "\e920";
+}
+.icon-italic:before {
+  content: "\e921";
+}
+.icon-learning:before {
+  content: "\e922";
+}
+.icon-location:before {
+  content: "\e923";
+}
+.icon-location_set:before {
+  content: "\e924";
+}
+.icon-mail:before {
+  content: "\e925";
+}
+.icon-marketing-online:before {
+  content: "\e926";
+}
+.icon-menu_dot:before {
+  content: "\e927";
+}
+.icon-menu-bar:before {
+  content: "\e928";
+}
+.icon-money:before {
+  content: "\e929";
+}
+.icon-online-learning:before {
+  content: "\e92a";
+}
+.icon-ordered_list:before {
+  content: "\e92b";
+}
+.icon-paperclip:before {
+  content: "\e92c";
+}
+.icon-password:before {
+  content: "\e92d";
+}
+.icon-reload:before {
+  content: "\e92e";
+}
+.icon-right:before {
+  content: "\e92f";
+}
+.icon-setting:before {
+  content: "\e930";
+}
+.icon-strike_through:before {
+  content: "\e931";
+}
+.icon-student:before {
+  content: "\e932";
+}
+.icon-textcolor:before {
+  content: "\e933";
+}
+.icon-tick-circle:before {
+  content: "\e934";
+}
+.icon-underline:before {
+  content: "\e935";
+}
+.icon-university:before {
+  content: "\e936";
+}
+.icon-unlink:before {
+  content: "\e937";
+}
+.icon-unordered_list:before {
+  content: "\e938";
+}
+.icon-trash:before {
+  content: "\e901";
+}
+.icon-edit:before {
+  content: "\e902";
+}
+.icon-plus:before {
+  content: "\e903";
+}
+.icon-calendar:before {
+  content: "\e904";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-arrow-down:before {
+  content: "\e906";
+}
+.icon-notification:before {
+  content: "\e907";
+}
+.icon-menu:before {
+  content: "\e900";
+}
