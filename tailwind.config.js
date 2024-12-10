@@ -27,12 +27,7 @@ module.exports = {
         'b8' : '#475569',
         'error':'#DC2626',
         'error2' : '#B01212',
-<<<<<<< Updated upstream
         'green' : '#11A75C',
-
-      
-=======
->>>>>>> Stashed changes
       },
       fontFamily: {
         'kumbh' : ['Kumbh Sans','sans-serif'],

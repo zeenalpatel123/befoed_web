@@ -960,13 +960,10 @@ body{
   position: relative;
 }
 
-<<<<<<< Updated upstream
-=======
 .sticky{
   position: sticky;
 }
 
->>>>>>> Stashed changes
 .inset-0{
   inset: 0px;
 }
@@ -992,12 +989,12 @@ body{
   left: 50%;
 }
 
-.top-1\/2{
-  top: 50%;
-}
-
 .top-0{
   top: 0px;
+}
+
+.top-1\/2{
+  top: 50%;
 }
 
 .z-10{
@@ -1006,6 +1003,10 @@ body{
 
 .z-50{
   z-index: 50;
+}
+
+.m-auto{
+  margin: auto;
 }
 
 .-mx-2{
@@ -1418,10 +1419,6 @@ body{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-black\/20{
-  background-color: rgb(0 0 0 / 0.2);
-}
-
 .p-2{
   padding: 0.5rem;
 }
@@ -1441,6 +1438,11 @@ body{
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-3{
@@ -1476,6 +1478,11 @@ body{
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .py-3{
@@ -1526,6 +1533,14 @@ body{
   padding-top: 2.5rem;
 }
 
+.pl-6{
+  padding-left: 1.5rem;
+}
+
+.pr-6{
+  padding-right: 1.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1569,6 +1584,10 @@ body{
   line-height: 2.5rem;
 }
 
+.text-\[20px\]{
+  font-size: 20px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1587,6 +1606,10 @@ body{
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-3{
+  line-height: .75rem;
 }
 
 .text-b1{
@@ -1877,6 +1900,10 @@ body{
     width: 100%;
   }
 
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
+
   .md\:space-x-5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
@@ -1948,6 +1975,10 @@ body{
 
   .lg\:w-\[calc\(100\%-250px\)\]{
     width: calc(100% - 250px);
+  }
+
+  .lg\:w-1\/5{
+    width: 20%;
   }
 
   .lg\:translate-x-0{
@@ -2034,12 +2065,35 @@ body{
     width: 20%;
   }
 
+  .xl\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .xl\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .xl\:pb-8{
     padding-bottom: 2rem;
   }
 
+  .xl\:pl-9{
+    padding-left: 2.25rem;
+  }
+
+  .xl\:pr-9{
+    padding-right: 2.25rem;
+  }
+
   .xl\:text-left{
     text-align: left;
+  }
+
+  .xl\:text-16{
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
@@ -2077,8 +2131,16 @@ body{
     width: auto;
   }
 
+  .\32xl\:w-full{
+    width: 100%;
+  }
+
   .\32xl\:max-w-\[258px\]{
     max-width: 258px;
+  }
+
+  .\32xl\:max-w-60{
+    max-width: 15rem;
   }
 
   .\32xl\:flex-nowrap{
