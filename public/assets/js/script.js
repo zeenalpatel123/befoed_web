@@ -1,5 +1,5 @@
 
-   function toggleActive(Id, db) {
+        function toggleActive(Id, db) {
         var element = document.querySelector(Id);
         element.classList.toggle(db);
         }
@@ -22,4 +22,4 @@
         });
         });
         
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
