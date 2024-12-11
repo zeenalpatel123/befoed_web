@@ -6,7 +6,7 @@ body{@apply font-kumbh;}
 .text28{@apply text-20 md:text-22 lg:text-24 2xl:text-28;}
 .warrper{@apply w-full max-w-[1480px] px-5 mx-auto ; }
 .anim{@apply transition-all duration-300;}
-.label{@apply block mb-1 text-b2 font-bold text-14;}
+.label{@apply block mb-1.5 text-b2 font-bold text-14;}
 .input{@apply py-2 xl:py-2.5 px-3 xl:px-4 outline-none text-b2 w-full block text-14 xl:text-16 border border-b3 bg-white rounded-md lg:rounded-lg 2xl:rounded-xl;}
 .btn{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-primary border border-primary text-white text-14 xl:text-16 font-extrabold rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-transparent hover:text-primary anim;}
 .btn2{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-transparent border border-primary text-primary text-14 xl:text-16 font-extrabold rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-primary hover:text-white anim;}
