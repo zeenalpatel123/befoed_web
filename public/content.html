@@ -134,6 +134,7 @@
                 </ul>
             </div>
         </aside>
+
         <main class="w-full lg:w-[calc(100%-250px)] ml-auto bg-white relative">
             <!-- header  -->
             <div class="px-5 py-3 md:px-6 md:py-3.5 lg:px-7 lg:py-4 2xl:px-9 2xl:py-5 border-b border-b3 bg-b4">
@@ -154,26 +155,28 @@
                 </div>
             </div>
 
+
+
             <!-- all table  -->
-            <!-- All Branches   -->
+            <!-- All Branches flow  -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9">
                 <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                    <div class="flex items-center w-full sm:w-1/2">
+                        <div class="w-1/2 2xl:w-auto px-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                         <div class="w-1/2 2xl:w-auto">
-                             <input type="text" placeholder="Select Your Menu" class="w-full sm:max-w-60 input">
+                         <div class="w-1/2 2xl:w-auto px-2">
+                             <input type="text" placeholder="Select Your Menu" class="w-full max-w-full sm:max-w-60 input">
                          </div>
                     </div>
                      <div class="w-full sm:w-auto p-2">
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-plus text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[151px]">Add New Branch</button>
-                        </div>
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New Branch</span>
+                        </button>
                      </div>
                 </form>
                 <!-- All Branches tables  -->
@@ -183,25 +186,38 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9 text-left text-nowrap">Branch Name</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Email</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Role</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9 text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-left text-nowrap">Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-left text-nowrap">Email</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-left text-nowrap">Mobile No.</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Company Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Company Add</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Recruiting Countries</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9 text-left text-nowrap">Is Approve</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9 text-left text-nowrap">Is Active</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9 text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Admin Beyond Apply</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johndoe12@gmial.com</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Admin</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-nowrap">Admin Beyond Apply</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-nowrap">infobfeahmedabad@gmail.com</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-nowrap">+91 9876543223</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-nowrap">Lorem ipsum com.</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Surat, Gujarat</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Canada, Australia...</td>
+                              <td class="text-[10px] md:text-12 xl:text-14 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                                <div class="flex items-center space-x-2">
+                                    <button class="py-1.5 px-2.5 inline-block rounded-md w-20 font-medium text-green bg-green/20">Approve</button>
+                                    <button class="py-1.5 px-2.5 inline-block rounded-md w-20 font-medium text-red-600 bg-red-300/20">Reject</button>
+                                </div>
+                              </td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -215,39 +231,45 @@
                 </div>
                 <!-- All Branches tables  -->
             </div>
-            <!-- All Branches -->
+            <!-- add new branch  -->
+
+            <!-- All Branches end-->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9">
+                <div class=""></div>
+            </div>
+
              <!-- All Inquiries   -->
-             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
                 <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
                     <div class="flex flex-wrap -mx-2 p-2">
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto p-2"> 
+                        <div class="w-full xs:w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto py-1 p-2"> 
                             <input type="text" placeholder="Student Name" class="w-full max-w-full 2xl:max-w-60 input">
                         </div>
-                         <div class="w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto p-2">
+                        <div class="w-full xs:w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto py-1 p-2">
                              <input type="text" placeholder="Select Country" class="w-full max-w-full 2xl:max-w-60 input">
-                         </div>
-                         <div class="w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto p-2">
+                        </div>
+                        <div class="w-full xs:w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto py-1 p-2">
                             <input type="text" placeholder="Select Intake" class="w-full max-w-full 2xl:max-w-60 input">
                         </div>
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto p-2">
+                        <div class="w-full xs:w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto py-1 p-2">
                             <input type="text" placeholder="Course Name" class="w-full max-w-full 2xl:max-w-60 input">
                         </div>
-                        <div class="w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto p-2">
+                        <div class="w-full xs:w-1/2 md:w-1/3 lg:w-1/5 2xl:w-auto py-1 p-2">
                             <input type="text" placeholder="Active" class="w-full max-w-full 2xl:max-w-60 input">
                         </div>
                     </div>
-                    <div class="w-full sm:w-auto p-2">
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-plus text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[151px]">Add New Inquiry</button>
-                        </div>
+                    <div class="w-full sm:w-auto p-2 ml-auto">
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New Inquiry</span>
+                        </button>
                     </div>
-                    <div class="flex items-center justify-end w-full space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2 mt-1.5">
+                    <div class="flex items-center justify-end w-full space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
                         <button class="secondary_btn">Import Data</button>
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-export text-[20px] leading-3 font-extrabold"></span>
-                            <button class="w-full max-w-full sm:max-w-[151px]">Add Export Data</button>
-                        </div>
+                        <button class="btn flex justify-center items-center space-x-1">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New Branch</span>
+                        </button>
                     </div>
                 </form>
                 <!-- All Inquiries tables  -->
@@ -257,7 +279,7 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">DOB</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Mobile No.</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Email</th>
@@ -267,27 +289,27 @@
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Intake</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Exam</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Mr. John Doe</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/07/1999</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543221</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">johndoe@gmail.com</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Surat, Gujarat</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Canada</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">IT & Development</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">sep</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">IELTS</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Mr. John Doe</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/07/1999</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543221</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">johndoe@gmail.com</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Surat, Gujarat</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Canada</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">IT & Development</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">sep</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">IELTS</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -305,22 +327,22 @@
             <!-- All B2B  -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
                 <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                    <div class="flex items-center w-full sm:w-1/2">
+                        <div class="w-1/2 2xl:w-auto px-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                         <div class="w-1/2 2xl:w-auto">
-                             <input type="text" placeholder="Role" class="w-full sm:max-w-60 input">
+                         <div class="w-1/2 2xl:w-auto px-2">
+                             <input type="text" placeholder="Role" class="w-full max-w-full sm:max-w-60 input">
                          </div>
                     </div>
                     <div class="w-full sm:w-auto p-2">
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-plus text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[151px]">Add New B2B</button>
-                        </div>
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New B2B</span>
+                        </button>
                     </div>
                 </form>
                 <!-- All B2B tables  -->
@@ -330,25 +352,25 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">B2B Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">B2B Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Email</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Role</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Admin Beyond Apply</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johndoe12@gmial.com</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Admin</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Admin Beyond Apply</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johndoe12@gmial.com</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Admin</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -366,22 +388,22 @@
             <!-- All Counsellors -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
                 <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                    <div class="flex items-center w-full sm:w-1/2">
+                        <div class="w-1/2 2xl:w-auto px-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                         <div class="w-1/2 2xl:w-auto">
-                             <input type="text" placeholder="Country" class="w-full sm:max-w-60 input">
+                         <div class="w-1/2 2xl:w-auto px-2">
+                             <input type="text" placeholder="Country" class="w-full max-w-full sm:max-w-60 input">
                          </div>
                     </div>
                     <div class="w-full sm:w-auto p-2">
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-plus text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[251px]">Add New Counsellors</button>
-                        </div>
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New Counsellors</span>
+                        </button>
                     </div>
                 </form>
                 <!-- All  Counsellors tables  -->
@@ -391,27 +413,27 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Counsellors Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Counsellors Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Email</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Mobile No.</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Country</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Johnson Doe</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johndoe12@gmial.com</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543234</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Australia</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Johnson Doe</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johndoe12@gmial.com</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543234</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Australia</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -429,34 +451,34 @@
             <!-- All Students -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
                 <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                    <div class="flex flex-wrap items-center 2xl:w-10/12 -mx-2">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                         <div class="w-1/2 2xl:w-auto">
-                             <input type="text" placeholder="01/04/2024 - 05/04/2024" class="w-full sm:max-w-60 input">
-                         </div>
-                         <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Select Country" class="w-full sm:max-w-[180px] input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="01/04/2024 - 05/04/2024" class="w-full 2xl:max-w-60 input">
                         </div>
-                        <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Select Intake" class="w-full sm:max-w-[164px] input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Select Country" class="w-full 2xl:max-w-[180px] input">
                         </div>
-                        <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Select Year" class="w-full sm:max-w-[152px] input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Select Intake" class="w-full 2xl:max-w-[180px] input">
                         </div>
-                        <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Status" class="w-full sm:max-w-[164px] input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Select Year" class="w-full 2xl:max-w-[180px] input">
+                        </div>
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Status" class="w-full 2xl:max-w-[180px] input">
                         </div>
                     </div>
-                    <div class="w-full sm:w-auto p-2">
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-plus text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[251px]">Add New Students</button>
-                        </div>
+                    <div class="w-full sm:w-auto ml-auto p-2">
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New Students</span>
+                        </button>
                     </div>
                 </form>
                 <!-- All Studentstables  -->
@@ -466,7 +488,7 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Students Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Students Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Email</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Mobile No.</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Created By</th>
@@ -474,36 +496,36 @@
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Assign To</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Status</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
 
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Johnson Doe</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johndoe12@gmial.com</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543234</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Kane Will</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/11/2024</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Johnson Doe</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johndoe12@gmial.com</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543234</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Kane Will</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/11/2024</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <div class="py-1 px-4 flex items-center justify-between space-x-2 rounded-2xl bg-b6">
                                     <span class="text-16 text-secondary font-normal inline-block">John Williomas</span>
                                     <span class="icon-arrow-down text24 text-secondary inline-block"></span>
                                 </div>
                             </td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <div class="py-1 px-4 flex items-center space-x-2 rounded-2xl bg-[#FFF5F4]">
                                     <span class="w-2 h-2 rounded-full bg-error inline-block"></span>
                                     <span class="text-16 text-secondary font-normal inline-block"> App. Incompleated</span>
                                 </div>
                             </td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <label class="label inline-flex items-center cursor-pointer">
                                     <input type="checkbox"class="sr-only peer">
                                     <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                 </label>
                             </td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                 <div class="flex items-center space-x-5">
                                     <span class="icon-edit text-24 text-secondary inline-block"></span>
                                     <span class="icon-trash text-24 text-error inline-block"></span>
@@ -521,47 +543,49 @@
             <!-- All Applications -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
                 <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                         <div class="w-1/2 2xl:w-auto">
-                             <input type="text" placeholder="Date Created" class="w-full sm:max-w-60 input">
-                         </div>
-                         <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Select Country" class="w-full sm:max-w-[180px] input">
+                    <div class="flex flex-wrap items-center">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Date Created" class="w-full 2xl:max-w-60 input">
                         </div>
-                        <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Select University" class="w-full sm:max-w-60 input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Select Country" class="w-full 2xl:max-w-[180px] input">
                         </div>
-                        <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Select Intake" class="w-full sm:max-w-[197px] input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Select University" class="w-full 2xl:max-w-[180px] input">
                         </div>
-                        <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Select Year" class="w-full sm:max-w-[174px] input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Select Intake" class="w-full 2xl:max-w-[180px] input">
                         </div>
-                        <div class="w-1/2 2xl:w-auto">
-                            <input type="text" placeholder="Status" class="w-full sm:max-w-[164px] input">
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Select Year" class="w-full 2xl:max-w-[180px] input">
                         </div>
-                    </div>
-                    <div class="w-full sm:w-auto p-2">
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-plus text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[251px]">Add New Students</button>
+                        <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                            <input type="text" placeholder="Status" class="w-full 2xl:max-w-[180px] input">
                         </div>
                     </div>
-                    <div class="flex items-center justify-between w-full space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2 mt-1.5">
-                        <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7">
-                            <div class="w-1/2 2xl:w-auto">
-                                <input type="text" placeholder="Application No." class="w-full sm:max-w-60 input">
+                    <div class="w-full sm:w-auto ml-auto p-2">
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New Students</span>
+                        </button>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex flex-wrap -mx-2 p-2">
+                            <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                                <input type="text" placeholder="Application No." class="w-full 2xl:max-w-60 input">
                             </div>
-                            <div class="w-1/2 2xl:w-auto">
-                               <input type="text" placeholder="Program Name" class="w-full sm:max-w-[180px] input">
-                           </div>
-                           <div class="w-1/2 2xl:w-auto">
-                               <input type="text" placeholder="Student Name" class="w-full sm:max-w-60 input">
-                           </div>
-                       </div>
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-export text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[151px]">Export Data</button>
+                            <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                                <input type="text" placeholder="Program Name" class="w-full 2xl:max-w-[180px] input">
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-auto py-1 p-2">
+                                <input type="text" placeholder="Student Name" class="w-full 2xl:max-w-60 input">
+                            </div>
+                            <div class="w-full sm:w-auto ml-auto py-1 p-2">
+                                <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                    <span class="icon-plus text-[20px] font-extrabold"></span>
+                                    <span>Export Data</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -572,51 +596,51 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Application No.</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Application No.</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Date Created</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Student Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">University Name</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Program Name</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Intake</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Program Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Intake</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Created By</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Assign To</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Status</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">1012255</td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3">26/11/2024 <br> 04:28 PM</td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johnson Doe</td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 w-full max-w-[133px]">London School of Commerce,
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">1012255</td>
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">26/11/2024 <br> 04:28 PM</td>
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Johnson Doe</td>
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 w-full max-w-[133px]">London School of Commerce,
                                 Malta</td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3">Master of Business
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">Master of Business
                                 Administration(Awarded by
                                 University of Suffolk, UK) -
                                 Marketing</td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Feb-2025</td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Mr. Jony Doe</td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Feb-2025</td>
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Mr. Jony Doe</td>
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <div class="py-1 px-4 flex items-center justify-between space-x-2 rounded-2xl bg-b6">
                                     <span class="text-16 text-secondary font-normal inline-block">John Williomas</span>
                                     <span class="icon-arrow-down text24 text-secondary inline-block"></span>
                                 </div>
                             </td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <div class="py-1 px-4 flex items-center space-x-2 rounded-2xl bg-[#F2FFF9]">
                                     <span class="w-2 h-2 rounded-full bg-green inline-block"></span>
                                     <span class="text-16 text-green font-normal inline-block"> Rec. App. at BFE</span>
                                 </div>
                             </td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <label class="label"s="inline-flex items-center cursor-pointer">
                                     <input type="checkbox"class="sr-only peer">
                                     <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                 </label>
                             </td>
-                            <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                            <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                 <div class="flex items-center space-x-5">
                                     <span class="icon-edit text-24 text-secondary inline-block"></span>
                                     <span class="icon-trash text-24 text-error inline-block"></span>
@@ -634,22 +658,22 @@
             <!--  Daily Updates   -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
                 <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                    <div class="flex flex-wrap w-full sm:w-8/12">
+                        <div class="w-full xs:w-1/2 2xl:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                         <div class="w-1/2 2xl:w-auto">
-                             <input type="text" placeholder="01/04/2024 - 05/04/2024" class="w-full sm:max-w-60 input">
+                         <div class="w-full xs:w-1/2 2xl:w-auto py-1 p-2">
+                             <input type="text" placeholder="01/04/2024 - 05/04/2024" class="w-full 2xl:max-w-60 input">
                          </div>
                     </div>
-                     <div class="w-full sm:w-auto p-2">
-                        <div class="btn flex items-center space-x-1">
-                            <span class="icon-plus text-20 font-extrabold"></span>
-                            <button class="w-full sm:max-w-[151px]">Add New Update</button>
-                        </div>
+                     <div class="w-full sm:w-auto py-1 px-2">
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add New Update</span>
+                        </button>
                      </div>
                 </form>
                 <!--Daily Updates tables  -->
@@ -659,23 +683,23 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Update Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Update Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Created Date</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">USA Universities FINAL Deadlines Spring 2024</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/11/2024  23:00 PM</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">USA Universities FINAL Deadlines Spring 2024</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/11/2024  23:00 PM</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -692,19 +716,19 @@
             <!-- Daily Updates -->
             <!--  Commissions Structure  -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
-                <form class="flex flex-wrap justify-end pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-end xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                        <div class="w-full sm:w-auto p-2">
-                           <div class="btn flex items-center space-x-1">
-                               <span class="icon-plus text-20 font-extrabold"></span>
-                               <button class="w-full sm:max-w-[299px]">Add Commissions Structure</button>
-                           </div>
+                        <div class="w-full xs:w-auto py-1 p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                <span class="icon-plus text-[20px] font-extrabold"></span>
+                                <span>Add Commissions Structure</span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -715,23 +739,23 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Commission Country</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Commission Country</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Created Date</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Canada</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/11/2024  23:00 PM</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Canada</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/11/2024  23:00 PM</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -748,19 +772,19 @@
             <!--Commissions Structure -->
             <!--  Student Loan-->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
-                <form class="flex flex-wrap justify-end pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-end xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                        <div class="w-full sm:w-auto p-2">
-                           <div class="btn flex items-center space-x-1">
-                               <span class="icon-plus text-20 font-extrabold"></span>
-                               <button class="w-full sm:max-w-60">Add New Loan Lead</button>
-                           </div>
+                        <div class="w-full xs:w-auto py-1 p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                <span class="icon-plus text-[20px] font-extrabold"></span>
+                                <span>Add New Loan Lead</span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -771,7 +795,7 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Student Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Student Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Email</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Mobile No.</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">University Name</th>
@@ -780,23 +804,23 @@
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Country</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Loan Amount</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Offer Letter</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">John Doe</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">johndoe@gmail.com</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543232</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">VNSGU</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">User Experience Design</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Sep-2025</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Canada</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">₹10,00,000</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">John Doe</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">johndoe@gmail.com</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543232</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">VNSGU</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">User Experience Design</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Sep-2025</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Canada</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">₹10,00,000</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <button class="btn">Download</button>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -813,19 +837,19 @@
             <!--Student Loan -->
             <!-- Contracts-->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
-                <form class="flex flex-wrap justify-end pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-end xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                        <div class="w-full sm:w-auto p-2">
-                           <div class="btn flex items-center space-x-1">
-                               <span class="icon-plus text-20 font-extrabold"></span>
-                               <button class="w-full sm:max-w-60">Add New Contracts</button>
-                           </div>
+                        <div class="w-full xs:w-auto py-1 p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                <span class="icon-plus text-[20px] font-extrabold"></span>
+                                <span>Add New Contracts</span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -836,7 +860,7 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Country</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Country</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Institute Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Contact Person</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Mobile No.</th>
@@ -845,23 +869,23 @@
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Term End Date</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Commission</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Uploaded File</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Canada</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">London School of Commerce, Malta</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Mr. John Doe</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543232</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">johndoe@gmail.com</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/07/2022</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/07/2024</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">₹50,000</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Canada</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">London School of Commerce, Malta</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Mr. John Doe</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">+91 9876543232</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">johndoe@gmail.com</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/07/2022</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">20/07/2024</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">₹50,000</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                 <button class="btn">Download</button>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -878,19 +902,19 @@
             <!--Contracts -->
             <!--  Marketing Material  -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
-                <form class="flex flex-wrap justify-end pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap xs:flex-nowrap justify-end items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                        <div class="w-full sm:w-auto p-2">
-                           <div class="btn flex items-center space-x-1">
-                               <span class="icon-plus text-20 font-extrabold"></span>
-                               <button class="w-full sm:max-w-[299px]">Add New Marketing </button>
-                           </div>
+                        <div class="w-full xs:w-auto py-1 p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                <span class="icon-plus text-[20px] font-extrabold"></span>
+                                <span>Add New Marketing</span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -901,25 +925,25 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Advertisement Banner</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Advertisement Banner</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Advertisement Title</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">
                                 <img src="assets/images/ad_banner.png" alt="ad_banner"/>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Canada accommodation Advertisement</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">Canada accommodation Advertisement</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -936,20 +960,20 @@
             <!--Marketing Material -->
             <!--  Master  -->
             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
-                <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-between xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                    </div>
-                    <div class="w-full sm:w-auto p-2">
-                       <div class="btn flex items-center space-x-1">
-                           <span class="icon-plus text-20 font-extrabold"></span>
-                           <button class="w-full sm:max-w-[299px]">Add New Country</button>
-                       </div>
+                        <div class="w-full xs:w-auto py-1 p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                <span class="icon-plus text-[20px] font-extrabold"></span>
+                                <span>Add New Country</span>
+                            </button>
+                        </div>
                     </div>
                 </form>
                 <!--Master tables  -->
@@ -959,21 +983,21 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Country Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-left text-nowrap">Country Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Australia</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Australia</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -990,20 +1014,20 @@
             <!--Master -->
              <!-- Role & Permission -->
              <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
-                <form class="flex flex-wrap justify-between pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
-                    <div class="flex items-center space-x-3.5 lg:space-x-5 2xl:space-x-7 p-2">
-                        <div class="w-1/2 2xl:w-auto"> 
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-between xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
                             <label for="search" class="input search_inpu">
                                 <span class="icon-search"></span>
                                 <input type="search" placeholder="Serach" id="search"/>
                             </label>
                         </div>
-                    </div>
-                    <div class="w-full sm:w-auto p-2">
-                       <div class="btn flex items-center space-x-1">
-                           <span class="icon-plus text-20 font-extrabold"></span>
-                           <button class="w-full sm:max-w-[299px]">Add New Role</button>
-                       </div>
+                        <div class="w-full xs:w-auto py-1 p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                <span class="icon-plus text-[20px] font-extrabold"></span>
+                                <span>Add New Role</span>
+                            </button>
+                        </div>
                     </div>
                 </form>
                 <!--Role & Permission tables  -->
@@ -1013,21 +1037,21 @@
                         <table class="items-center bg-transparent w-full border-collapse">
                           <thead class="bg-b4">
                             <tr>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Role Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9 text-left text-nowrap">Role Name</th>
                               <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
-                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-left text-nowrap">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left border-b border-b3">
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Application Manager</td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-5 xl:pl-9  text-nowrap">Application Manager</td>
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
                                   <label class="label inline-flex items-center cursor-pointer">
                                       <input type="checkbox"class="sr-only peer">
                                       <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
                                   </label>
                               </td>
-                              <td class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                              <td class="text-[12px] md:text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-5 xl:pr-9  text-nowrap">
                                   <div class="flex items-center space-x-5">
                                       <span class="icon-edit text-24 text-secondary inline-block"></span>
                                       <span class="icon-trash text-24 text-error inline-block"></span>
@@ -1042,6 +1066,201 @@
                 <!--Role & Permission tables  -->
             </div>
             <!--Role & Permission -->
+
+             <!--  Master City -->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-between xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
+                            <label for="search" class="input search_inpu">
+                                <span class="icon-search"></span>
+                                <input type="search" placeholder="Serach" id="search"/>
+                            </label>
+                        </div>
+                        <div class="w-full xs:w-auto p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                 <span class="icon-plus text-[20px] font-extrabold"></span>
+                                 <span>Add New City</span>
+                             </button>
+                        </div>
+                    </div>
+                </form>
+                <!--Master tables  -->
+                <div class="w-full mb-12 xl:mb-0 mx-auto mt-3.5 lg:mt-5 2xl:mt-7">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-2xl overflow-hidden">
+                      <div class="block w-full overflow-x-auto">
+                        <table class="items-center bg-transparent w-full border-collapse">
+                          <thead class="bg-b4">
+                            <tr>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">City Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">State</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">Country</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left border-b border-b3">
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Toronto</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Ontario</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Canada</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                                  <label class="label inline-flex items-center cursor-pointer">
+                                      <input type="checkbox"class="sr-only peer">
+                                      <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+                                  </label>
+                              </td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                                  <div class="flex items-center space-x-5">
+                                      <span class="icon-edit text-24 text-secondary inline-block"></span>
+                                      <span class="icon-trash text-24 text-error inline-block"></span>
+                                  </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+                <!--Master tables  -->
+            </div>
+            <!--Master city -->
+
+            <!--  Master State-->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-between xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
+                            <label for="search" class="input search_inpu">
+                                <span class="icon-search"></span>
+                                <input type="search" placeholder="Serach" id="search"/>
+                            </label>
+                        </div>
+                        <div class="w-full xs:w-auto p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                 <span class="icon-plus text-[20px] font-extrabold"></span>
+                                 <span>Add New State</span>
+                             </button>
+                        </div>
+                    </div>
+                </form>
+                <!--Master tables  -->
+                <div class="w-full mb-12 xl:mb-0 mx-auto mt-3.5 lg:mt-5 2xl:mt-7">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-2xl overflow-hidden">
+                        <div class="block w-full overflow-x-auto">
+                        <table class="items-center bg-transparent w-full border-collapse">
+                            <thead class="bg-b4">
+                            <tr>
+                                <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left text-nowrap">State Name</th>
+                                <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
+                                <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="text-left border-b border-b3">
+                                <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-nowrap">Andhra Pradesh</td>
+                                <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 text-nowrap">
+                                    <label class="label inline-flex items-center cursor-pointer">
+                                        <input type="checkbox"class="sr-only peer">
+                                        <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+                                    </label>
+                                </td>
+                                <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-nowrap">
+                                    <div class="flex items-center space-x-5">
+                                        <span class="icon-edit text-24 text-secondary inline-block"></span>
+                                        <span class="icon-trash text-24 text-error inline-block"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+                <!--Master tables  -->
+            </div>
+            <!--Master State -->
+
+            <!--  Master univercity -->
+             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <form class="pb-3 lg:pb-5 2xl:pb-7 border-b border-b5 -mx-2">
+                    <div class="flex flex-wrap justify-between xs:flex-nowrap items-center -mx-2 p-2">
+                        <div class="w-full xs:w-auto py-1 p-2"> 
+                            <label for="search" class="input search_inpu">
+                                <span class="icon-search"></span>
+                                <input type="search" placeholder="Serach" id="search"/>
+                            </label>
+                        </div>
+                        <div class="w-full xs:w-auto p-2">
+                            <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                                 <span class="icon-plus text-[20px] font-extrabold"></span>
+                                 <span>Add New University Data</span>
+                             </button>
+                        </div>
+                    </div>
+                </form>
+                <!--Master tables  -->
+                <div class="w-full mb-12 xl:mb-0 mx-auto mt-3.5 lg:mt-5 2xl:mt-7">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-2xl overflow-hidden">
+                      <div class="block w-full overflow-x-auto">
+                        <table class="items-center bg-transparent w-full border-collapse">
+                          <thead class="bg-b4">
+                            <tr>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9 text-left text-nowrap">
+                                <input type="checkbox">
+                              </th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">University Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Course</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Subject</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Name</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Campus </th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Country</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Study Level</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Duration</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Intake</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Application Fee</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Tuition Fee</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 text-left text-nowrap">Is Active</th>
+                              <th class="text-14 xl:text-16 text-primary font-semibold py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9  text-left text-nowrap">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left border-b border-b3">
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pl-6 xl:pl-9  text-left">
+                                <input type="checkbox">
+                              </td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">London School of Commerce,Malta</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">Commerce</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">Finance</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">BSc (Hons) Accounting and Finance</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">London</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">UK</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">Bachelor</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">36 Month(s)</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">Sep/Jan</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">£20</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">£14,160</td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3">
+                                  <label class="label inline-flex items-center cursor-pointer">
+                                      <input type="checkbox"class="sr-only peer">
+                                      <div class="relative w-11 h-6 bg-gray-200 peer-focus:ring-blue-300 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+                                  </label>
+                              </td>
+                              <td class="text-14 xl:text-16 text-secondary font-normal py-2.5 px-2 xl:py-4 xl:px-3 pr-6 xl:pr-9 ">
+                                  <div class="flex items-center space-x-5">
+                                      <span class="icon-edit text-24 text-secondary inline-block"></span>
+                                      <span class="icon-trash text-24 text-error inline-block"></span>
+                                  </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+                <!--Master tables  -->
+            </div>
+            <!--  Master univercity -->
         </main>
     </div>
 <!-- 1  -->
