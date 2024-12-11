@@ -19,6 +19,7 @@ body{@apply font-kumbh;}
 .search_inpu span{@apply pr-3 inline-block text-b1 text-18 absolute left-3 top-1/2 -translate-y-1/2;}
 .search_inpu input{@apply outline-none bg-transparent text-14 xl:text-16 pl-6;}
 
+
 ::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);

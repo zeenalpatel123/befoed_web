@@ -1019,6 +1019,11 @@ body{
   margin-right: -0.625rem;
 }
 
+.-mx-3{
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1148,14 +1153,6 @@ body{
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.w-24{
-  width: 6rem;
 }
 
 .min-w-0{
@@ -1414,9 +1411,12 @@ body{
   background-color: rgb(17 167 92 / var(--tw-bg-opacity, 1));
 }
 
-.bg-red-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
+.bg-green\/20{
+  background-color: rgb(17 167 92 / 0.2);
+}
+
+.bg-red-300\/20{
+  background-color: rgb(252 165 165 / 0.2);
 }
 
 .bg-transparent{
@@ -1428,20 +1428,16 @@ body{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-green\/20{
-  background-color: rgb(17 167 92 / 0.2);
-}
-
-.bg-red-300\/20{
-  background-color: rgb(252 165 165 / 0.2);
-}
-
 .p-2{
   padding: 0.5rem;
 }
 
 .p-2\.5{
   padding: 0.625rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .p-3\.5{
@@ -1619,16 +1615,16 @@ body{
   line-height: 2.5rem;
 }
 
+.text-\[10px\]{
+  font-size: 10px;
+}
+
 .text-\[12px\]{
   font-size: 12px;
 }
 
 .text-\[20px\]{
   font-size: 20px;
-}
-
-.text-\[10px\]{
-  font-size: 10px;
 }
 
 .font-bold{
@@ -1691,14 +1687,14 @@ body{
   color: rgb(60 81 160 / var(--tw-text-opacity, 1));
 }
 
-.text-secondary{
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
-}
-
 .text-red-600{
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary{
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0{
@@ -1862,6 +1858,10 @@ body{
 
   .sm\:top-auto{
     top: auto;
+  }
+
+  .sm\:mb-0{
+    margin-bottom: 0px;
   }
 
   .sm\:block{
@@ -2134,14 +2134,14 @@ body{
     text-align: left;
   }
 
-  .xl\:text-16{
-    font-size: 16px;
-    line-height: 26px;
-  }
-
   .xl\:text-14{
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .xl\:text-16{
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
@@ -2153,6 +2153,10 @@ body{
 
   .\32xl\:mb-5{
     margin-bottom: 1.25rem;
+  }
+
+  .\32xl\:mb-6{
+    margin-bottom: 1.5rem;
   }
 
   .\32xl\:mt-5{
