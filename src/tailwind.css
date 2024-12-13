@@ -11,7 +11,7 @@ body{@apply font-kumbh;}
 .btn{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-primary border border-primary text-white text-14 xl:text-16 font-extrabold rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-transparent hover:text-primary anim;}
 .btn2{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-transparent border border-primary text-primary text-14 xl:text-16 font-extrabold rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-primary hover:text-white anim;}
 .del_btn{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-error border border-error text-white text-14 xl:text-16 font-extrabold rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-transparent hover:text-error anim;}
-.secondary_btn{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-transparent border border-b1 text-secondary text-14 xl:text-16 font-extrabold rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-b1 hover:text-white anim;}
+.secondary_btn{@apply py-2 xl:py-2.5 px-5 xl:px-7 bg-transparent border border-b1 text-secondary text-14 xl:text-16 font-extrabold rounded-md lg:rounded-lg 2xl:rounded-xl hover:bg-primary hover:text-white anim;}
 /* .search{@apply py-2 xl:py-2.5 px-5 xl:px-7 rounded-md lg:rounded-lg 2xl:rounded-xl bg-white border flex space-x-2 w-full ml-auto;} */
 
 /* serch box css  */
