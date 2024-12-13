@@ -155,21 +155,1759 @@
             </div>
 
             <!-- Contracts / Add New Contracts  -->
-            <div class="p-5 md:p-6 lg:p-7 2xl:p-9">
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 space-y-3.5 lg:space-y-5 2xl:space-y-5 hidden">
                 <div class="flex flex-wrap items-center justify-between mb-3 lg:mb-4 2xl:mb-6">
                     <h2 class="text24 text-secondary font-bold mb-2.5 sm:mb-0">Add New Contract</h2>
                     <button class="btn">Add Contract</button>
                 </div>
-                <form class="flex items-center -mx-3 space-y-3.5 lg:space-y-5 2xl:space-y-7">
+                <div class="flex flex-wrap items-center -mx-3 pb-3.5 lg:pb-5 2xl:pb-7 border-b border-b3">
                     <div class="w-full xs:w-1/2 p-3">
-                        <label class="label">Country Name</label>
+                        <label class="label">Country Name <span class="text-red-400 inline-block">*</span></label>
                         <input type="text" placeholder="Enter Country Name" class="input"/>
                     </div>
-                </form>
+                    <div class="w-full xs:w-1/2 p-3">
+                        <label class="label">Institute Name <span class="text-red-400 inline-block">*</span></label>
+                        <input type="text" placeholder="Enter Institute Name" class="input"/>
+                    </div>
+                </div>
+                <div class="border-b border-b3 pb-2.5 lg:pb-3 2xl:pb-4">
+                    <div class="flex flex-wrap items-start justify-between mb-1.5 lg:mb-2.5 2xl:mb-3">
+                        <h3 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 xs:mb-0 mb-2.5">Contact Person</h3>
+                        <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                            <span class="icon-plus text-[20px] font-extrabold"></span>
+                            <span>Add Person</span>
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap items-center -mx-3">
+                        <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                            <label class="label">Contact Person <span class="text-red-400 inline-block">*</span></label>
+                            <input type="text" placeholder="Enter Contact Person" class="input"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                            <label class="label">Mobile No <span class="text-red-400 inline-block">*</span></label>
+                            <input type="text" placeholder="+91" class="input"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                            <label class="label">Email <span class="text-red-400 inline-block">*</span></label>
+                            <input type="text" placeholder="Enter Email" class="input"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                            <label class="label">Designation  <span class="text-red-400 inline-block">*</span></label>
+                            <input type="text" placeholder="Enter Contact Person" class="input"/>
+                        </div>
+                        <div class="flex flex-wrap items-start w-full">
+                            <div class="w-[calc(100%-50px)] flex flex-wrap">
+                                <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                                    <label class="label">Contact Person <span class="text-red-400 inline-block">*</span></label>
+                                    <input type="text" placeholder="Enter Contact Person" class="input"/>
+                                </div>
+                                <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                                    <label class="label">Mobile No <span class="text-red-400 inline-block">*</span></label>
+                                    <input type="text" placeholder="+91" class="input"/>
+                                </div>
+                                <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                                    <label class="label">Email <span class="text-red-400 inline-block">*</span></label>
+                                    <input type="text" placeholder="Enter Email" class="input"/>
+                                </div>
+                                <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 py-2 lg:py-3 p-3">
+                                    <label class="label">Designation  <span class="text-red-400 inline-block">*</span></label>
+                                    <input type="text" placeholder="Enter Contact Person" class="input"/>
+                                </div>
+                            </div>
+                            <div class="py-2 w-12 bg-red-500/10 text-center rounded-md mt-8 lg:mt-9">
+                                <span class="icon-trash text24 text-red-600"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3"> 
+                    <div class="w-full xs:w-1/2 md:w-1/3 py-2 lg:py-3 p-3">
+                        <label class="label">Term Start Date</label>
+                        <input type="text" placeholder="Select Date" class="input"/>
+                    </div>
+                    <div class="w-full xs:w-1/2 md:w-1/3 py-2 lg:py-3 p-3">
+                        <label class="label">Term End Date</label>
+                        <input type="text" placeholder="Select Date" class="input"/>
+                    </div>
+                    <div class="w-full xs:w-1/2 md:w-1/3 py-2 lg:py-3 p-3">
+                        <label class="label">Commission <span class="text-red-400 inline-block">*</span></label>
+                        <input type="text" placeholder="₹" class="input"/>
+                    </div>
+                    <div class="w-full xs:w-1/2 md:w-3/12 xl:w-[360px] py-2 lg:py-3 p-3">
+                        <label class="label">Upload File</label>
+                        <div class="input border-dashed flex items-center justify-center space-x-3 relative">
+                            <input class="absolute w-full h-full inset-0 opacity-0 z-50 cursor-pointer" type="file" name="uploader" id="uploader"/>
+                            <span class="icon-export text24 text-b1 inline-block"></span>
+                            <span class="inline-block text-14 2xl:text-16 text-b1">Upload File</span>
+                        </div>
+                    </div>
+                    <div class="py-2 lg:py-3 p-3 w-full sm:w-9/12 xl:w-[calc(100%-396px)] mt-auto">
+                        <div class="flex flex-wrap -my-1 xs:-my-2 -m-2">
+                            <div class="w-full xs:w-max sm:w-1/2 lg:w-1/3 xl:max-w-[290px] py-1 xs:py-2 p-2">
+                                <div class="input bg-b6 border-b6 flex items-center justify-between space-x-2">
+                                    <span class="icon-tick-circle text-20 text-green"></span>
+                                    <span class="text-xs lg:text-14 text-b1 whitespace-nowrap overflow-hidden text-ellipsis">Canada Contract.pdf</span>
+                                    <span class="icon-close text-20 text-error cursor-pointer"></span>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-max sm:w-1/2 lg:w-1/3 xl:max-w-[290px] py-1 xs:py-2 p-2">
+                                <div class="input bg-b6 border-b6 flex items-center justify-between space-x-2">
+                                    <span class="icon-tick-circle text-20 text-green"></span>
+                                    <span class="text-xs lg:text-14 text-b1 whitespace-nowrap overflow-hidden text-ellipsis">Canada Contract.pdf</span>
+                                    <span class="icon-close text-20 text-error cursor-pointer"></span>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-max sm:w-1/2 lg:w-1/3 xl:max-w-[290px] py-1 xs:py-2 p-2">
+                                <div class="input bg-b6 border-b6 flex items-center justify-between space-x-2">
+                                    <span class="icon-tick-circle text-20 text-green"></span>
+                                    <span class="text-xs lg:text-14 text-b1 whitespace-nowrap overflow-hidden text-ellipsis">Canada Contract.pdf</span>
+                                    <span class="icon-close text-20 text-error cursor-pointer"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full py-2 lg:py-3 p-3">
+                        <label class="label">Other Details <span class="text-red-400 inline-block">*</span></label>
+                        <textarea cols="3" rows="3" placeholder="Write here...." class="input"></textarea>
+                    </div>
+                </div>
             </div>
-            <!-- Contracts / Add New Contracts  -->
+            <!-- Contracts / Add New Contracts  -->     
 
+            <!-- Contracts / Contracts Detail Page  -->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <div>
+                    <h2 class="text24 text-secondary font-bold mb-3.5 lg:mb-5 2xl:mb-7">Contracts Detail</h2>
+                    <div class="space-y-4 lg:space-y-6 2xl:space-y-8">
+                        <div class="bg-b6 rounded-lg md:rounded-xl 2xl:rounded-2xl p-4 md:p-5 lg:p-6 2xl:p-7">
+                            <div class="flex flex-wrap items-center -mx-2">
+                                <div class="sm:w-10/12 p-2">
+                                    <h3 class="font-bold text-secondary text-16 lg:text-18 2xl:text-20 mb-2.5 lg:mb-3">Canada</h3>
+                                    <div class="flex flex-wrap -mx-3.5">
+                                        <div class="w-full flex-wrap xs:flex-nowrap lg:w-auto flex items-center xs:space-x-2 py-1.5 p-3.5">
+                                            <div class="flex items-center space-x-2">
+                                                <span class="icon-university text-[20px] text-primary"></span>
+                                                <span class="text-14 md:text-16 text-secondary font-semibold inline-block text-nowrap">Institute Name :</span>
+                                            </div>
+                                            <span class="text-secondary font-normal mt-1.5 xs:mt-0 text-14">London School of Commerce, Malta</span>
+                                        </div>
+                                        <div class="w-full lg:w-auto flex items-center space-x-2 py-1.5 p-3.5">
+                                            <span class="icon-university text-[20px] text-primary"></span>
+                                            <span class="text-14 md:text-16 text-secondary font-semibold inline-block text-nowrap">Term Start</span>
+                                            <span class="text-secondary font-normal text-14">20/07/2022</span>
+                                        </div>
+                                        <div class="w-full lg:w-auto flex items-center space-x-2 py-1.5 p-3.5">
+                                            <span class="icon-university text-[20px] text-primary"></span>
+                                            <span class="text-14 md:text-16 text-secondary font-semibold inline-block text-nowrap">Term End</span>
+                                            <span class="text-secondary font-normal text-14">20/072024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-2/12 p-2">
+                                    <h2 class="text-primary text24 font-bold text-end">₹ 50,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-2.5 md:space-y-3.5 2xl:space-y-4">
+                            <h2 class="text-primary font-bold text-16 lg:text-18 2xl:text-20">Contact Persons Details</h2>
+                            <div class="bg-b6 rounded-lg md:rounded-xl 2xl:rounded-2xl p-4 md:p-5 lg:p-6 2xl:p-7">
+                                <div class="flex flex-wrap items-center">
+                                    <div class="w-full xl:w-3/12">
+                                    <h2 class="font-bold text-secondary text-16 lg:text-18 2xl:text-20 mb-2.5 xl:mb-0">Mr. John Doe</h2>
+                                    </div>
+                                    <div class="w-full xl:w-9/12">
+                                        <div class=" flex flex-wrap -mx-2.5">
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-call text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Mobile No.</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block">9876543232</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-mail text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Email</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block">johndoe@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-education text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Designation</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block text-nowrap">Application Manager</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-b6 rounded-lg md:rounded-xl 2xl:rounded-2xl p-4 md:p-5 lg:p-6 2xl:p-7">
+                                <div class="flex flex-wrap items-center">
+                                    <div class="w-full xl:w-3/12">
+                                        <h2 class="font-bold text-secondary text-16 lg:text-18 2xl:text-20 mb-2.5 xl:mb-0">Mr. John Doe</h2>
+                                    </div>
+                                    <div class="w-full xl:w-9/12">
+                                        <div class=" flex flex-wrap -mx-2.5">
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-call text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Mobile No.</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block">9876543232</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-mail text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Email</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block">johndoe@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-education text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Designation</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block text-nowrap">Application Manager</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-b6 rounded-lg md:rounded-xl 2xl:rounded-2xl p-4 md:p-5 lg:p-6 2xl:p-7">
+                                <div class="flex flex-wrap items-center">
+                                    <div class="w-full xl:w-3/12">
+                                        <h2 class="font-bold text-secondary text-16 lg:text-18 2xl:text-20 mb-2.5 xl:mb-0">Mr. John Doe</h2>
+                                    </div>
+                                    <div class="w-full xl:w-9/12">
+                                        <div class=" flex flex-wrap -mx-2.5">
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-call text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Mobile No.</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block">9876543232</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-mail text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Email</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block">johndoe@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:w-1/2 xl:w-1/3 p-2.5">
+                                                <div class="flex items-center space-x-3">
+                                                    <div class="flex items-center space-x-2">
+                                                        <span class="icon-education text-[20px] text-primary"></span>
+                                                        <span class="inline-block text-14 lg:text-16 font-semibold text-secondary">Designation</span>
+                                                    </div>
+                                                    <span class="text-14 font-normal text-secondary inline-block text-nowrap">Application Manager</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 mb-2.5 md:mb-3">Attachment</h2>
+                            <div class="flex flex-wrap items-center -mx-3">
+                                <div class="w-full xs:w-1/2 sm:max-w-52 p-3">
+                                    <div class="bg-b6 py-4 px-2.5 md:py-6 md:px-3 lg:py-8 lg:px-4 rounded-2xl">
+                                        <span class="icon-file text-primary text-[50px] text-center block"></span>
+                                        <span class="block text-center text-14 font-normal text-secondary mt-2.5 lg:mt-3 2xl:mt-4">Canada Contract.pdf</span>
+                                    </div>
+                                </div>
+                                <div class="w-full xs:w-1/2 sm:max-w-52 p-3">
+                                    <div class="bg-b6 py-4 px-2.5 md:py-6 md:px-3 lg:py-8 lg:px-4 rounded-2xl">
+                                        <span class="icon-file text-primary text-[50px] text-center block"></span>
+                                        <span class="block text-center text-14 font-normal text-secondary mt-2.5 lg:mt-3 2xl:mt-4">Canada Contract.pdf</span>
+                                    </div>
+                                </div>
+                                <div class="w-full xs:w-1/2 sm:max-w-52 p-3">
+                                    <div class="bg-b6 py-4 px-2.5 md:py-6 md:px-3 lg:py-8 lg:px-4 rounded-2xl">
+                                        <span class="icon-file text-primary text-[50px] text-center block"></span>
+                                        <span class="block text-center text-14 font-normal text-secondary mt-2.5 lg:mt-3 2xl:mt-4">Canada Contract.pdf</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contracts / Contracts Detail Page  -->
+
+        <!-- student Loan  -->
+            <!-- Student Area / Add New Loan Lead  -->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <div class="flex flex-wrap items-center justify-between mb-3 lg:mb-4 2xl:mb-6">
+                    <h2 class="text24 text-secondary font-bold mb-2.5 sm:mb-0">Add New Loan Lead</h2>
+                    <button class="btn w-full max-w-[220px]">Submit</button>
+                </div>
+                <div class="space-y-5 lg:space-y-7 2xl:space-y-9">
+                    <div class="rounded-2xl border border-b5 px-3.5 py-3 lg:py-4 lg:px-5 2xl:py-5 2xl:px-7">
+                        <h3 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 mb-5 lg:mb-7 2xl:mb-9">Personal Information</h3>
+                        <div class="flex flex-wrap items-center -mx-3">
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">First Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter First Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Middle Name</label>
+                                <input type="text" placeholder="Enter Middle Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Last Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Last Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Mobile No. <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="+91" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Email <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Email Id" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">City</label>
+                                <input type="text" placeholder="Enter City" class="input"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-b5 px-3.5 py-3 lg:py-4 lg:px-5 2xl:py-5 2xl:px-7">
+                        <h3 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 mb-5 lg:mb-7 2xl:mb-9">Loan Details</h3>
+                        <div class="flex flex-wrap items-center -mx-3">
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Required Loan Amount <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="₹" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Preferred Country <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Select Country" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">University Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter University Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Intake <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Month" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Intake <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Year" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Course Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Course Name" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Study Level <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Course Name" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Upload Offer Letter</label>
+                                <div class="input border-dashed flex items-center justify-center space-x-3 relative">
+                                    <input class="absolute w-full h-full inset-0 opacity-0 z-50 cursor-pointer" type="file" name="uploader" id="uploader"/>
+                                    <span class="icon-export text-16 md:text-18 2xl:text-20 text-b1 inline-block"></span>
+                                    <span class="inline-block text-14 2xl:text-16 text-b1">Upload File</span>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Annum Income <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="₹" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Other Details</label>
+                                <input type="text" placeholder="Enter Details" class="input"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Student Area / Add New Loan Lead  -->
+             
+            <!-- Student Area / Add New Student Accommodation  -->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <div class="flex flex-wrap items-center justify-between mb-3 lg:mb-4 2xl:mb-6">
+                    <h2 class="text24 text-secondary font-bold mb-2.5 sm:mb-0">Add New Student Accommodation</h2>
+                    <button class="btn w-full max-w-[220px]">Submit</button>
+                </div>
+                <div class="space-y-5 lg:space-y-7 2xl:space-y-9">
+                    <div class="rounded-2xl border border-b5 px-3.5 py-3 lg:py-4 lg:px-5 2xl:py-5 2xl:px-7">
+                        <h3 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 mb-5 lg:mb-7 2xl:mb-9">Personal Information</h3>
+                        <div class="flex flex-wrap items-center -mx-3">
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">First Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter First Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Middle Name</label>
+                                <input type="text" placeholder="Enter Middle Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Last Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Last Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Mobile No. <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="+91" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Email <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Email Id" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">City</label>
+                                <input type="text" placeholder="Enter City" class="input"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-b5 px-3.5 py-3 lg:py-4 lg:px-5 2xl:py-5 2xl:px-7">
+                        <h3 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 mb-5 lg:mb-7 2xl:mb-9">Accommodation Details</h3>
+                        <div class="flex flex-wrap items-center -mx-3">
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Location <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Location" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Preferred Country <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Select Country" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">University Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter University Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Intake <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Month" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Intake <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Year" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Course Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Course Name" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Study Level <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Study Level" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">budget <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="₹" class="input"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Student Area / Add New Student Accommodation  -->
+
+            <!-- Student Area / Add New Forex  -->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <div class="flex flex-wrap items-center justify-between mb-3 lg:mb-4 2xl:mb-6">
+                    <h2 class="text24 text-secondary font-bold mb-2.5 sm:mb-0">Add New Forex</h2>
+                    <button class="btn w-full max-w-[220px]">Submit</button>
+                </div>
+                <div class="space-y-5 lg:space-y-7 2xl:space-y-9">
+                    <div class="rounded-2xl border border-b5 px-3.5 py-3 lg:py-4 lg:px-5 2xl:py-5 2xl:px-7">
+                        <h3 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 mb-5 lg:mb-7 2xl:mb-9">Personal Information</h3>
+                        <div class="flex flex-wrap items-center -mx-3">
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">First Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter First Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Middle Name</label>
+                                <input type="text" placeholder="Enter Middle Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Last Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Last Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Mobile No. <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="+91" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Email <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Email Id" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">City</label>
+                                <input type="text" placeholder="Enter City" class="input"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-b5 px-3.5 py-3 lg:py-4 lg:px-5 2xl:py-5 2xl:px-7">
+                        <h3 class="text-primary font-bold text-16 lg:text-18 2xl:text-20 mb-5 lg:mb-7 2xl:mb-9">Forex Details</h3>
+                        <div class="flex flex-wrap items-center -mx-3">
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Amount <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="₹" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">University Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter University Name" class="input"/>
+                            </div> 
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Intake <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Month" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Intake <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Year" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Course Name <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Enter Course Name" class="input"/>
+                            </div>
+                            <div class="w-full xs:w-1/2 md:w-1/3 2xl:w-1/4 p-3">
+                                <label class="label">Study Level <span class="text-red-400 inline-block">*</span></label>
+                                <input type="text" placeholder="Study Level" class="input"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Student Area / Add New Forex  -->
+        <!-- student Loan  -->
+        
+            <!-- Learning Resources  -->
+            <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <div class="flex flex-wrap items-center justify-end ml-auto space-y-2.5 sm:space-y-0 sm:space-x-3.5 lg:space-x-5 2xl:space-x-7 mb-3 md:mb-4 lg:mb-5 2xl:mb-6">
+                    <label for="search" class="input search_inpu max-w-full sm:max-w-[258px]">
+                        <span class="icon-search"></span>
+                        <input type="search" placeholder="Serach" id="search"/>
+                    </label>
+                    <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                        <span class="icon-plus text-[20px] font-extrabold"></span>
+                        <span>Add New Learning Resources</span>
+                    </button>
+                </div>
+                <div class="flex flex-wrap items-center -mx-2.5">
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/australia.png" alt="australia"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Australia</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/canada.png" alt="canada"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Canada</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/dubai.png" alt="dubai"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Dubai</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/germany.png" alt="germany"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Germany</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/ireland.png" alt="ireland"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Ireland</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/new_zealand.png" alt="new_zealand"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">New Zealand</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/singapore.png" alt="singapore"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Singapore</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/switzerland.png" alt="switzerland"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Switzerland</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/uk.png" alt="uk"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">UK</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/usa.png" alt="usa"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">USA</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/italy.png" alt="italy"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Italy</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/france.png" alt="france"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">France</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/netherlands.png" alt="netherlands"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Netherlands</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/sweden.png" alt="sweden"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Sweden</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/spain.png" alt="spain"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Spain</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/austria.png" alt="austria"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Austria</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/denmark.png" alt="denmark"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Denmark</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/finland.png" alt="finland"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Finland</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/hungary.png" alt="hungary"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Hungary</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/lithuania.png" alt="lithuania"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Lithuania</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/cyprus.png" alt="cyprus"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Cyprus</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/poland.png" alt="poland"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Poland</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/czech_republic.png" alt="czech_republic"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Czech Republic</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/malaysia.png" alt="malaysia"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Malaysia</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/mauritius.png" alt="mauritius"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Mauritius</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/japan.png" alt="japan"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Japan</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/vietnam.png" alt="vietnam"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Vietnam</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/malta.png" alt="malta"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Malta</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/miscellaneous.png" alt="miscellaneous"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Miscellaneous</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/china.png" alt="china"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">China</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/belgium.png" alt="belgium"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Belgium</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/russia.png" alt="russia"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Russia</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/south_korea.png" alt="south_korea"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">South Korea</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">  
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/georgia.png" alt="georgia"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Georgia</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-2.5 relative">
+                        <div class="bg-b4 border border-b3 p-4 md:p-5 rounded-2xl overflow-hidden w-full relative">
+                            <span class="w-44 h-36 rounded-full bg-white inline-block absolute top-1/2 -translate-y-1/2 -left-20"></span>
+                            <div class="relative z-10 py-4">
+                                <div class="text-end absolute right-0 top-0 cursor-pointer group">
+                                    <span class="icon-menu_dot"></span>
+                                    <ul class="min-w-28 rounded-lg bg-white border border-b3 shadow px-4 py-1 translate-y-2 invisible group-hover:visible group-hover:translate-y-0 anim">
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-edit text-16 text-secondary"></span>
+                                            <span class="text-secondary text-xs font-normal">Edit</span>
+                                        </li>
+                                        <li class="flex items-center space-x-2">
+                                            <span class="icon-trash text-16 text-error"></span>
+                                            <span class="text-error text-xs font-normal">Delete</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex items-center space-x-12">
+                                    <img src="assets/images/video_updates.png" alt="video_updates"/>
+                                    <h2 class="text-18 xl:text-24 font-bold text-secondary text-center">Video Updates</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <!-- Learning Resources  -->
+
+            <!-- Learning Resources / Select Category  -->
+             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <div class="flex items-center justify-between">
+                    <h2 class="text24 text-secondary font-bold mb-2.5 sm:mb-0">Australia</h2>
+                    <button class="btn flex justify-center items-center space-x-1 w-full xs:w-auto">
+                        <span class="icon-plus text-[20px] font-extrabold"></span>
+                        <span>Upload Document</span>
+                    </button>
+                </div>
+                <div class="flex flex-wrap -mx-3.5">
+                    <div class="w-full lg:w-4/12 2xl:w-3/12 p-3.5">
+                        <div class="bg-b6 h-screen rounded-lg lg:rounded-xl 2xl:rounded-2xl py-7 px-6">
+                            <h3 class="text-secondary font-bold text-16 lg:text-18 2xl:text-20 mb-3.5 lg:mb-5 2xl:mb-7">Select Category</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-center space-x-3 group">
+                                    <span class="icon-file text-20 text-b1 font-semibold group-hover:text-primary anim"></span>
+                                    <span class="text-b1 text-16 font-semibold group-hover:text-primary anim">General Presentations</span>
+                                </li>
+                                <li class="flex items-center space-x-3 group">
+                                    <span class="icon-file text-20 text-b1 font-semibold group-hover:text-primary anim"></span>
+                                    <span class="text-b1 text-16 font-semibold group-hover:text-primary anim">Visa Documents</span>
+                                </li>
+                                <li class="flex items-center space-x-3 group">
+                                    <span class="icon-file text-20 text-b1 font-semibold group-hover:text-primary anim"></span>
+                                    <span class="text-b1 text-16 font-semibold group-hover:text-primary anim">Application Guide & Method</span>
+                                </li>
+                                <li class="flex items-center space-x-3 group">
+                                    <span class="icon-file text-20 text-b1 font-semibold group-hover:text-primary anim"></span>
+                                    <span class="text-b1 text-16 font-semibold group-hover:text-primary anim">Financial Documents</span>
+                                </li>
+                                <li class="flex items-center space-x-3 group">
+                                    <span class="icon-file text-20 text-b1 font-semibold group-hover:text-primary anim"></span>
+                                    <span class="text-b1 text-16 font-semibold group-hover:text-primary anim">Samples & Formats</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-8/12 2xl:w-9/12 p-3.5">
+                        <div class="flex flex-wrap -mx-3">
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia General Presentation (India)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Eligibility and GS (India)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Financials and Visas (India)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia General Presentation (Bangladesh)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Eligibility and GS (Bangladesh)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Financials and Visas (Bangladesh)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia General Presentation (Bhutan)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Eligibility and GS (Bhutan)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Financials and Visas (Bhutan)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia General Presentation (Ghana)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Eligibility and GS (Ghana)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Financials and Visas (Ghana)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia General Presentation (Indonesia)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Eligibility and GS (Indonesia)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                            <div class="w-full sm:w-1/2 2xl:w-1/3 p-3 pb-7 relative h-auto">
+                                <div class="bg-b4 border border-b3 rounded-2xl py-5 pb-3 px-4 relative overflow-hidden h-full">
+                                    <div class="relative z-10">
+                                        <h2 class="text-18 text-secondary font-semibold mb-2">Australia - Financials and Visas (Indonesia)</h2>
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-14 text-b1 font-normal">5.59 MB</span>
+                                            <span class="text-14 text-secondary font-normal">19-08-2024</span>
+                                        </div>
+                                        <div class="text-right -mt-2">
+                                            <span class="icon-file text-24 xl:text-4xl text-primary"></span>
+                                        </div>
+                                    </div>
+                                    <span class="w-44 h-36 rounded-full bg-white inline-block absolute -bottom-20 -right-20"></span>
+                                </div>
+                                <a href="" class="w-10 h-10 rounded-full bg-primary absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                                    <span class="icon-import text-white text-18 lg:text-24"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- Learning Resources / Select Category  -->
+
+            <!-- Daily Updates  -->
+             <div class="p-5 md:p-6 lg:p-7 2xl:p-9 hidden">
+                <div class="flex flex-wrap items-center justify-between mb-3 lg:mb-4 2xl:mb-6">
+                    <h2 class="text24 text-secondary font-bold mb-2.5 sm:mb-0">Add New Update</h2>
+                    <button class="btn">Add Update</button>
+                </div>
+                <div class="flex flex-wrap items-center -mx-3 space-y-1.5">
+                    <div class="w-full p-3">
+                        <label class="label">Update Title <span class="text-red-400 inline-block">*</span></label>
+                        <input type="text" placeholder="Enter Update Title" class="input"/>
+                    </div>
+                    <div class="w-full p-3">
+                        <label class="label">Description <span class="text-red-400 inline-block">*</span></label>
+                        <textarea type="text" cols="3" rows="3" placeholder="Write here...." class="input"></textarea>
+                    </div>
+                    <div class="w-full p-3">
+                        <label class="label">Upload Attachment  <span class="text-red-400 inline-block">*</span></label>
+                        <div class="input border-dashed border border-primary flex items-center justify-center space-x-3 relative cursor-pointer">
+                            <input class="absolute w-full h-full inset-0 opacity-0 z-50" type="file" name="uploader" id="uploader"/>
+                            <span class="icon-export text-18 2xl:text-[20px] text-b1 inline-block"></span>
+                            <span class="inline-block text-14 2xl:text-16 text-b1">Upload File</span>
+                        </div>
+                    </div>
+                    <div class="w-full p-3">
+                        <h2 class="label">Show To <span class="text-red-400 inline-block">*</span></h2>
+                        <div class="flex flex-wrap items-center space-x-7">
+                            <div class="flex items-center space-x-3">
+                                <input type="checkbox" name="all_1" id="all_1"/>
+                                <label for="all_1" class="text-14 text-secondary inline-block">All Branch</label>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <input type="checkbox" name="all_2" id="all_2"/>
+                                <label for="all_2" class="text-14 text-secondary inline-block">All B2B</label>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <input type="checkbox" name="all_3" id="all_3"/>
+                                <label for="all_3" class="text-14 text-secondary inline-block">All Counsellor</label>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+             </div>
+            <!-- Daily Updates  -->
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
