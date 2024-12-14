@@ -18,6 +18,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
+        '12' : ['12px','18px'],
         '14' : ['14px','20px'], 
         '16' : ['16px','26px'], 
         '18' : ['18px','24px'], 
@@ -45,11 +46,13 @@ module.exports = {
       },
       fontFamily: {
         'kumbh' : ['Kumbh Sans','sans-serif'],
-   
       },
       backgroundImage: {
         'primary_gra': 'linear-gradient(90deg, #EC008C 0%, #FC6767 100%)',
       },
+      boxShadow: {
+        'one': '0px 3px 31px 0px rgba(15, 23, 42, 0.1)',
+      }
     },
   },
   plugins: [],

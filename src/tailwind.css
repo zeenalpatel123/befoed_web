@@ -19,6 +19,28 @@ body{@apply font-kumbh;}
 .search_inpu span{@apply pr-3 inline-block text-b1 text-18 absolute left-3 top-1/2 -translate-y-1/2;}
 .search_inpu input{@apply outline-none bg-transparent text-14 xl:text-16 pl-6;}
 
+.table_responsive{@apply block w-full overflow-x-auto; scrollbar-width: thin;}
+
+tr td:last-child, tr th:last-child {
+	position: sticky !important;
+	right: 0;
+	z-index: 1;
+	background: inherit;
+	background-color: #fff;
+}
+@media (min-width:767px){
+	tr td:first-child, tr th:first-child {
+		position: sticky !important;
+		left: 0;
+		z-index: 1;
+		background: inherit;
+		background-color: #fff;
+	}
+}
+tr th:last-child, tr th:first-child{
+	background-color: #F8FAFC;
+}
+
 
 ::-webkit-scrollbar-track
 {
@@ -34,6 +56,7 @@ body{@apply font-kumbh;}
 
 ::-webkit-scrollbar-thumb
 {
+	height: 5px;
 	background-color: #eee;
 }
 @tailwind utilities;
